@@ -1,0 +1,28 @@
+<html>
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <title>Untitled 1</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.js"></script>
+    <script type="text/javascript">
+    function goToLocation(loc) {
+    adresa = document.getElementById('address').value
+    document.getElementById('mapa').src = loc.replace("Zagreb", adresa);
+    }
+    function goToLocationRadio(loc) {
+    document.getElementById('mapa').src = loc;
+    }
+    </script>
+  </head>
+  <body>
+    <iframe id="mapa" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=%20Split+()&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" width="520" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+    <form method="post">
+      <input name="locationSelection" type="radio" onclick="goToLocationRadio('https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=%20Rijeka+()&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed')" />Rijeka
+      <input name="locationSelection" type="radio" onclick="goToLocationRadio('https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=%20Zagreb+()&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed')" />Zagreb
+      <div>
+      <input id="address" type="text" name="text" value="Zadar">
+      <input name="locationSelection" type="button" value="Search" onclick="goToLocation('https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=%20Zagreb+()&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed')" />
+    </div>
+    </form>
+  </body>
+  
+  </html>
