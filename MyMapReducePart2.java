@@ -190,14 +190,14 @@ public class MyMapReducePart2
 							if (wordMap.containsKey(temp)) 
 							{ 
 								// potrebno nadodati vlastiti kod
-								// dohvati tu rijec iz hash tablice, te broj puta koliko se je ponovila 
-								// uvecaj broj puta koliko se je ta rijec ponovila 
+								// dohvati tu rijec iz hash tablice, te broj puta koliko se ponovila 
+								// uvecaj broj puta koliko se ta rijec ponovila 
 								// update-aj podatke u hash tablici
 							} 
 							else // rijec ne postoji u hash tablici, pa je trebamo nadodati 
 							{ 
 								// potrebno nadodati vlastiti kod
-								// uvecaj broj puta koliko se je ta rijec ponovila i dodaj je u hash tablicu
+								
 							}		 
 						} 
 					} 
