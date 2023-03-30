@@ -1,5 +1,5 @@
 import java.util.*;
-public class MyMapReduce
+public class MyMapReducePart1
 {
     List buckets = new ArrayList();
     List intermediateresults = new ArrayList();
